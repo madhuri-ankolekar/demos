@@ -44,6 +44,9 @@ public class AuthController {
         res.put("token", token);
         res.put("role", u.getRole());
         res.put("email", u.getEmail());
+
+
+        System.out.println("************************************************************done");
         return ResponseEntity.ok(res);
     }
 }
