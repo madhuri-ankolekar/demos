@@ -20,6 +20,7 @@ public class UserController {
     @PostMapping("/add")
     public ResponseEntity<?> addUser(@RequestBody User user) {
         user.setRole("USER");
+          user.setRole("USER");
         return ResponseEntity.ok(userService.saveUser(user));
     }
 
