@@ -21,6 +21,10 @@ public class UserController {
     public ResponseEntity<?> addUser(@RequestBody User user) {
         user.setRole("USER");
           user.setRole("USER");
+ user.setRole("USER");
+         user.setRole("USER");
+         user.setRole("USER");
+        System.out.println("new pulllllll");
         return ResponseEntity.ok(userService.saveUser(user));
     }
 
