@@ -28,7 +28,7 @@ public class UserController {
         System.out.println("new pulllllll");
         System.out.println("new pulllllll");
         System.out.println("new pulllllll");
-        System.out.println("new pulllllll");
+          user.setRole("USER");
         return ResponseEntity.ok(userService.saveUser(user));
     }
 
