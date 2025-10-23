@@ -20,20 +20,26 @@ public class UserController {
     @PostMapping("/add")
     public ResponseEntity<?> addUser(@RequestBody User user) {
         user.setRole("USER");
-          user.setRole("USER");
- user.setRole("USER");
-         user.setRole("USER");
-         user.setRole("USER");
-        System.out.println("new pulllllll");
-        System.out.println("new pulllllll");
-        System.out.println("new pulllllll");
-        user.setRole("USER");
-          user.setRole("USER");
-          user.setRole("USER");
-          user.setRole("USER");
+        System.out.println("hello world");
+        System.out.println("hoping");
+        System.out.println("bring");
+        System.out.println("hello world");
+        System.out.println("hoping");
+        System.out.println("bring");
+        System.out.println("hello world");
+        System.out.println("hoping");
+        System.out.println("bring");
         return ResponseEntity.ok(userService.saveUser(user));
     }
 
+
+
+    
+    @PreAuthorize("hasAnyAuthority('ADMIN','USER')")
+    @GetMapping("/all")
+    public ResponseEntity<?> getAllUsers2() {
+        return ResponseEntity.ok(userService.getAllUsers());
+    }
     @PreAuthorize("hasAnyAuthority('ADMIN','USER')")
     @GetMapping("/all")
     public ResponseEntity<?> getAllUsers() {
