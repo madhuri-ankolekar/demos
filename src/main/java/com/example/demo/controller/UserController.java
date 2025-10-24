@@ -38,6 +38,8 @@ public class UserController {
     @PreAuthorize("hasAnyAuthority('ADMIN','USER')")
     @GetMapping("/all")
     public ResponseEntity<?> getAllUsers2() {
+             System.out.println("pulling in local");
+        System.out.println("harsha");
         return ResponseEntity.ok(userService.getAllUsers());
     }
     @PreAuthorize("hasAnyAuthority('ADMIN','USER')")
