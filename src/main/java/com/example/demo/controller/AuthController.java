@@ -46,6 +46,11 @@ public class AuthController {
         res.put("email", u.getEmail());
 
 
+
+        System.out.println("************************************************************done");
+        System.out.println("************************************************************done");
+        System.out.println("************************************************************done");
+        System.out.println("************************************************************done");
         System.out.println("************************************************************done");
         return ResponseEntity.ok(res);
     }
