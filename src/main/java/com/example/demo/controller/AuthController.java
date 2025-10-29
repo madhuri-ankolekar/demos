@@ -45,7 +45,12 @@ public class AuthController {
         res.put("role", u.getRole());
         res.put("email", u.getEmail());
 
-
+ System.out.println("goa");
+        System.out.println("goa1");
+        System.out.println("goa2");
+        System.out.println("goa3");
+        System.out.println("goa5");
+ 
 
         System.out.println("************************************************************done");
         System.out.println("************************************************************done");
