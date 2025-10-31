@@ -29,6 +29,17 @@ public class UserController {
         System.out.println("hello world");
         System.out.println("hoping");
         System.out.println("bring");
+
+
+          System.out.println("***************************************************************************");
+        System.out.println("hoping");
+        System.out.println("bring");
+        System.out.println("hello world");
+        System.out.println("hoping");
+        System.out.println("bring");
+        System.out.println("hello world");
+        System.out.println("hoping");
+        System.out.println("bring");
         return ResponseEntity.ok(userService.saveUser(user));
     }
 
